@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Manhwa Bookmarker</title>
+	<link rel="stylesheet" href="bulma.min.css">
+</head>
+<body>
+	<!-- main page container for the title and status of the popup -->
+	<div id="mainPage" class="container m-3" >
+		<h1 class="title">Manhwa Bookmarker</h1>
+		<div class="field">
+			<label class="label">Status</label>
+			<span class="tag is-success">Running</span>
+			<span class="tag is-danger">Stopped</span>
+		</div>
+		<button class="button is-black" id="viewLibrary">View Library</button>
+		<button class="button is-Link" id="bookmark">Bookmark</button>
+
+	</div>
+	
+
+
+	
+	<!-- creating the library that hold all the current bookmarks-->
+
+	<div id="Library" class="container m-3 is-hidden" >
+		<h2 class="title ">Library</h2>
+		<div class = "field is-justify-content-center mt-3 mb-3" id = "searchContainer">
+			<div class="control">
+				<input class = "input is-small" type = "text" id = "searchInput" placeHolder = "Search..." style = "max-width: 250px;">
+			</div>
+			<div class = "dropdown" id = "searchDropdown">
+				<div class = "dropdown-menu" role = "menu">
+					<div class = "dropdown-content" id = "dropdownContent">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "content is-hidden" id = "bookSearchInfo">
+			<p class = "mb-3">Title: <span id = "searchBookTitle"></span> Chapter: <span id = "searchBookChapter"></span><p>	
+		</div>
+		<div class = "content">
+			<h5>Recently Bookmarked</h5>
+			<p class = "mb-3">Title: <span id = "bookTitle0"></span> Chapter: <span id = "bookChapter0"></span><p>
+			<p class = "mb-3">Title: <span id = "bookTitle1"></span> Chapter: <span id = "bookChapter1"></span><p>
+			<p class = "mb-3">Title: <span id = "bookTitle2"></span> Chapter: <span id = "bookChapter2"></span><p>
+			<p class = "mb-3">Title: <span id = "bookTitle3"></span> Chapter: <span id = "bookChapter3"></span><p>
+		</div>
+		<button class="button is-black" id="mainPageButton">Main menu</button>
+		<button class="button is-danger" id="removeBook">Remove</button>
+
+
+	</div>
+</body>
+<script src = "app.js"> </script>
+</html>
+		
+	
