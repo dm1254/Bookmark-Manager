@@ -1,0 +1,18 @@
+{
+	"manifest_version": 3,
+  	"name": "Manhwa Bookmarker",
+  	"version": "1.0",
+  	"description": "An extension to keep track of manhwa/manga you are currently reading.",
+  	"icons": {
+    		"16": "images/icon-16.png",
+    		"48": "images/icon-48.png"
+    		
+  	},
+	"action": {
+		"default_popup": "popup/popup.html",
+		"default_icon": {
+		"16": "images/icon-16.png",
+		"48": "images/icon-48.png"
+    }  	},
+  	"permissions": ["storage", "activeTab", "tabs"]
+}
